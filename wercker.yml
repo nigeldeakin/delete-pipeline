@@ -1,0 +1,12 @@
+build: 
+  box: golang
+  steps:
+    - script:
+        name: Delete /pipeline
+        code: |
+          rm -rf /pipeline
+  after-steps:
+    - script:
+        name: Say hello
+        code: |
+          echo Hello    
